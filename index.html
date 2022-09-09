@@ -1,0 +1,73 @@
+
+<!--DojoWeather
+Created by: Tyrese Stewart-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="main-nav">
+    <h1 class="title">DojoWeather</h1>
+    <ul class="list-items" onclick="alert('Loading Weather Report...')">
+      <li>Burbank</li>
+      <li>Chicago</li>
+      <li>Dallas</li>
+    </ul>
+  </header>
+  <div class="container">
+    <main>
+      <div id="filter">
+        <h2>San Jose</h2>
+        <div id="choice">
+          <span>show temperature in</span>
+          <select>
+            <option>C°</option>
+            <option>F°</option>
+          </select>
+        </div>
+      </div>
+      <section id="gallery">
+        <div class="report">
+          <p class="dateForcast">Today</p>
+          <img src="assets 2/some_rain.png" alt="weather icon of clouds raining">
+          <p>some rain</p>
+          <span>24°</span><span class="cold">18°</span>
+        </div>
+        <div class="report">
+          <p class="dateForcast">Tomorrow</p>
+          <img src="assets 2/some_sun.png" alt="weather icon of the sun">
+          <p>some sun</p>
+          <span>27°</span><span class="cold">19°</span>
+        </div>
+        <div class="report">
+          <p class="dateForcast">Friday</p>
+          <img src="assets 2/some_clouds.png" alt="an icon of dark cloud">
+          <p>some clouds</p>
+          <span>21°</span><span class="cold">16°</span>
+        </div>
+        <div class="report">
+          <p class="dateForcast">Saturday</p>
+          <img src="assets 2/some_sun.png" alt="weather icon of the sun">
+          <p>some sun</p>
+          <span>26°</span><span class="cold">21°</span>
+        </div>
+      </section>
+      <section id="cookie">
+        <img src="assets 2/cookie.png" id="cookieMiner">
+        <div>
+          <h3>Stop! Cookie Time</h3>
+          <p>We use cookie(sadly not the edible ones) to presonalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button type="submit" class="btn" onclick="cookieAcpt(this)">I Accept</button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
